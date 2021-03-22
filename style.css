@@ -1,0 +1,245 @@
+/*!
+Theme Name: Locus
+Theme URI: http://underscores.me/
+Author: Dhruva Kumar
+Author URI: http://underscores.me/
+Description: A Locus Assignment Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: locus
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Locus is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #343947;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.lh-base-2 {
+    line-height: 1.75 !important;
+}
+
+.locus-lang {
+    min-width: auto;
+}
+
+.hero,
+.newsletter {
+    background: #e7f3fe;
+}
+
+/* Hero */
+
+.hero .banner-bg {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 40%;
+    z-index: 1;
+}
+
+.hero .index-1 {
+    z-index: 1;
+}
+
+.hero .form-control:focus {
+    box-shadow: none;
+}
+
+.hero .btn:focus {
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .hero .col {
+        padding: 6rem 0 !important;
+    }
+
+    .hero h1 {
+        font-size: 34px !important;
+    }
+
+    .hero p {
+        font-size: 16px !important;
+        width: 60%;
+    }
+
+    .hero form {
+        font-size: 16px !important;
+        width: 60%;
+    }
+
+    .hero .banner-bg {
+        bottom: 10%;
+        width: 20%;
+    }
+}
+
+/* Tech Updates */
+.tech-updates .card-title {
+    font-size: 16px;
+    color: #343947;
+}
+
+.tech-updates .card-text {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .tech-updates .card-title {
+        text-align: left !important;
+        font-size: 18px;
+    }
+
+    .tech-updates .card-text {
+        text-align: left !important;
+        font-size: 12px;
+    }
+}
+
+.locus .card {
+    border-radius: 18px;
+}
+
+.title::after {
+    content: "";
+    height: 5px;
+    width: 120px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #0072f5 37.93%, rgba(196, 196, 196, 0) 96.55%);
+    border-radius: 6px;
+}
+
+.card-group>.card:not(:first-child),
+.card-group>.card:not(:last-child) {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.locus-card .card-footer {
+    padding: 0 1.5rem 2rem 1.5rem;
+    background-color: transparent;
+    border-top: none;
+}
+
+.locus-badge a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Blog Details */
+
+@media (min-width: 768px) {
+    .blog-details .row {
+        padding: 18rem 0 !important;
+    }
+}
+
+.blog-img {
+    background-size: cover;
+}
+
+.blog-content p {
+    text-align: justify;
+}
+
+.blog-content .card {
+    border-radius: 18px;
+}
+
+/* Newsletter */
+
+@media (min-width: 768px) {
+    .newsletter h3 {
+        font-size: 32px !important;
+    }
+
+    .newsletter p {
+        font-size: 16px !important;
+    }
+
+    .newsletter form {
+        width: 60%;
+    }
+}
+
+/* Footer */
+.locus-footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.locus-footer .nav-link {
+    color: #343947;
+    font-size: 14px;
+    margin-bottom: 0.25rem;
+    padding: 0;
+}
+
+.widget-1 {
+    grid-area: widget-1;
+}
+
+.widget-2 {
+    grid-area: widget-2;
+}
+
+.widget-3 {
+    grid-area: widget-3;
+}
+
+.widget-4 {
+    grid-area: widget-4;
+}
+
+.widget-5 {
+    grid-area: widget-5;
+}
+
+.widget-6 {
+    grid-area: widget-6;
+}
+
+.widget-7 {
+    grid-area: widget-7;
+}
+
+.widget-8 {
+    grid-area: widget-8;
+}
+
+.locus-footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "widget-1 widget-2 widget-3 widget-4 ."
+        "widget-5 widget-5 widget-6 widget-7 widget-8";
+}
+
+.widget-5 .nav-link {
+    width: 100%;
+}
+
+.nav>a {
+    flex: 50%;
+    /* or - flex: 0 50% - or - flex-basis: 50% - */
+}
